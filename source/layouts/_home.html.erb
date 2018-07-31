@@ -1,0 +1,107 @@
+<div id=home class="container">
+  <h2 class="text-center">What is your next trip?</h2>
+  <div class="cards">
+    <!-- Code your cards  here -->
+    <!-- <div class="card">
+      <a href="flats/show.html"><div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris')"">
+      <div class="card-category">
+        <h3>PARIS</h3>
+      </div>
+      <div class="card-avatar">
+        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar" alt="Ssaunier">
+      </div>
+      <div class="card-desc">
+        <h3>Sebastien's home</h3>
+        <p>Charming room in Montmartre</p>
+      </div>
+      </div></a>
+      <div class="card-footer">
+        <div class="card-date">
+          <p>Posted on 22/11/19</p>
+        </div>
+        <div class="card-links">
+          <a href="#"><i class="fas fa-star"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="show.html"><div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/london')">
+        <div class="card-category">
+          <h3>LONDON</h3>
+        </div>
+        <div class="card-avatar">
+          <img src="https://kitt.lewagon.com/placeholder/users/papillard" alt="" class="avatar">
+        </div>
+        <div class="card-desc">
+          <h3>Boris' home</h3>
+          <p>Central apartment near Picadilly</p>
+        </div>
+      </div></a>
+      <div class="card-footer">
+        <div class="card-date">
+          <p>Posted on 22/11/19</p>
+        </div>
+        <div class="card-links">
+          <a href="#"><i class="fas fa-star"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="show.html"><div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/berlin')">
+        <div class="card-category">
+          <h3>BERLIN</h3>
+        </div>
+        <div class="card-avatar">
+          <img src="https://kitt.lewagon.com/placeholder/users/alexthr" alt="" class="avatar">
+        </div>
+        <div class="card-desc">
+          <h3>Alex's home</h3>
+          <p>Beautiful apartment in Kreuzberg</p>
+        </div>
+      </div></a>
+      <div class="card-footer">
+        <div class="card-date">
+          <p>Posted on 22/11/19</p>
+        </div>
+        <div class="card-links">
+          <a href="#"><i class="fas fa-star"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share"></i></a>
+        </div>
+      </div>
+    </div> -->
+    <%data.flats.each do |owner, flat| %>
+    <div class="card">
+      <a href="flats/<%=owner%>.html"><div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%=flat.city_slug%>')">
+        <div class="card-category">
+          <h3><%=flat.city_slug.upcase%></h3>
+        </div>
+        <div class="card-avatar">
+          <img src="https://kitt.lewagon.com/placeholder/users/<%=owner%>" alt="" class="avatar">
+        </div>
+        <div class="card-desc">
+          <h3><%=flat.name%></h3>
+          <p><%=flat.description%></p>
+        </div>
+      </div></a>
+      <div class="card-footer">
+        <div class="card-date">
+          <p>Posted on 22/11/19</p>
+        </div>
+        <div class="card-links">
+          <a href="#"><i class="fas fa-star"></i></a>
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="#"><i class="fas fa-share"></i></a>
+        </div>
+      </div>
+    </div>
+    <%end%>
+  </div>
+</div>
+

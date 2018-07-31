@@ -1,0 +1,43 @@
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<div class="banner-half" style="background-image: url('https://kitt.lewagon.com/placeholder/cities/<%=flat.city_slug%>')">
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="flat-basics">
+      <div class="flat-owner">
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "avatar" %>
+        <p><%= flat.name %></p>
+        <h1><%= flat.description %></h1>
+        <p><%= flat.city_name %></p>
+      </div>
+      <div class="flat-booking">
+        <form>
+          <h4 class="text-center">Book this flat</h4>
+          <div class="form-row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Check-in date">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Check-out date">
+            </div>
+          </div>
+          <div class="form-row">
+            <select class="form-control custom-select">
+              <option selected>Guests</option>
+              <% (1..9).each do |num| %>
+              <option value="<%=num%>"><%=num%></option>
+              <%end%>
+              <option value="10+">10+</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <input type="submit" value="submit" class="btn btn-primary" style="width: 100%;">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

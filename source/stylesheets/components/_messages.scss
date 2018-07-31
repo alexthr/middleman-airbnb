@@ -1,0 +1,87 @@
+#messages {
+  height: 100vh;
+}
+
+.inbox {
+  margin: 0;
+  padding: 0px 20px;
+  list-style: none;
+  border: 1px solid #DCE0E0;
+
+}
+.message {
+  /* Your turn to design a flexbox message */
+  font-size: 13px;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-border {
+  border-bottom: 1px solid rgba(220,224,224,0.5);
+}
+
+.message-body {
+  padding-left: 20px;
+  flex-grow: 1;
+}
+
+.message-name {
+  min-width: 100px;
+  padding-left: 20px;
+}
+
+.message-status {
+  min-width: 80px;
+  padding-left: 10px;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.pending {
+  color: rgb(211,211,211);
+}
+
+.accepted {
+  color: #078007;
+}
+.declined {
+  color: rgb(255,7,0);
+}
+
+strong {
+  color: black;
+}
+
+p {
+  margin: 5px 0px 10px 0px;
+  color: rgb(183,183,183) ;
+}
+
+.price {
+  color: black;
+  font-weight: bolder;
+}
+
+.tabs {
+  display: flex;
+}
+.tab {
+  color: rgb(200,200,200);
+  font-weight: bold;
+  padding: 10px;
+}
+
+.tab:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  border-bottom: 5px solid #00A699;
+}

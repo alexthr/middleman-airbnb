@@ -1,0 +1,21 @@
+ssaunier:
+  name: "Sebastien's home"
+  description: "Charming room in Montmartre"
+  city_name: "Paris, France"
+  city_slug: "paris"
+  wifi: false
+  rating: 4
+papillard:
+  name: "Boris' home"
+  description: "Central apartment near Picadilly"
+  city_name: "London, England"
+  city_slug: "london"
+  wifi: true
+  rating: 3
+alexthr:
+  name: Alex's home
+  description: "Beautiful apartment in Kreuzberg"
+  city_name: "Berlin, Germany"
+  city_slug: "berlin"
+  wifi: true
+  rating: 5

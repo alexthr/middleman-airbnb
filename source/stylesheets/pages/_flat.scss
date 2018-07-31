@@ -1,0 +1,25 @@
+.banner-half {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.flat-basics {
+  display: flex;
+  margin: 20px 0;
+}
+
+.flat-booking {
+  flex: 1 1 200px;
+  h2 {
+    padding: 10px;
+  }
+}
+
+#booking {
+  display: block;
+}
+
+.form-control {
+  margin: 10px;
+}
